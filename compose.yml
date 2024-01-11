@@ -2,14 +2,7 @@ version: '3.9'
 
 services:
   node-frontend:
-    container_name: node-frontend
-    # depends_on:
-    #   - mssql-db
-    build: 
-      context: .
-      dockerfile: DockerFile
+    build: .
     ports:
       - "8080:8080"
-    volumes:
-      - ./:/workspace:cached
 
