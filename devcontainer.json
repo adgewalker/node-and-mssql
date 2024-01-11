@@ -1,7 +1,0 @@
-{
-    "name": "Node and SQL Server",
-    "dockerComposeFile": ["../compose.yml"],
-    "service": "node-frontend",
-    "shutdownAction": "stopCompose",
-    "workspaceFolder": "/workspace/"
-}
