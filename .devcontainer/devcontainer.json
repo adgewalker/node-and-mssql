@@ -1,5 +1,6 @@
 {
     "name": "Node and SQL Server",
     "dockerComposeFile": ["../compose.yml"],
-    "service": "node-frontend"
+    "service": "node-frontend",
+    "workspaceFolder": "/workspace/"
 }
