@@ -2,7 +2,7 @@
   "name": "Node & SQL Server",
   "dockerComposeFile": ["../compose.yml"],
   "service": "node-frontend",
-  "forwardPorts": [7071],
+  "forwardPorts": [8080],
   "customizations": {
     "vscode": {
       "extensions": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"]
