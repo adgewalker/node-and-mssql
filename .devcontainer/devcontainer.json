@@ -1,7 +1,7 @@
 {
   "name": "Node & SQL Server",
   "dockerComposeFile": ["../compose.yml"],
-  "service": "node-mssql",
+  "service": "node-frontend",
   "forwardPorts": [7071],
   "customizations": {
     "vscode": {
