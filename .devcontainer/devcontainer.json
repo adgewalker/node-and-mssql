@@ -1,8 +1,6 @@
 {
   "name": "Node & SQL Server",
-  "build": {
-    "dockerfile": "Dockerfile"
-  },
+  "dockerComposeFile": ["../compose.yml"],
   "forwardPorts": [7071],
   "customizations": {
     "vscode": {
