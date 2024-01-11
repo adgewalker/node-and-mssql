@@ -1,6 +1,13 @@
 {
-    "name": "Node and SQL Server",
-    "dockerComposeFile": ["../compose.yml"],
-    "service": "node-frontend",
-    "workspaceFolder": "/workspace/"
+  "name": "Node & SQL Server",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "forwardPorts": [7071],
+  "customizations": {
+    "vscode": {
+      "extensions": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"]
+    }
+  },
+  "remoteUser": "node"
 }
