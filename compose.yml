@@ -6,6 +6,7 @@ services:
       context: ./
       dockerfile: Dockerfile
     user: root
+    tty: true
     ports:
       - 8080:8080
 
