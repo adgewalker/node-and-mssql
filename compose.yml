@@ -1,35 +1,16 @@
 version: '3.9'
 
 services:
-  # mssql-db:
-  #   hostname: sql
-  #   container_name: mssql-db
-  #   ports:
-  #     - "1433:1433"
-  #   build:
-  #     context: ./sql
-  #     dockerfile: SqlDockerfile
-  #   restart: unless-stopped
-  #   environment:
-  #     MSSQL_PID: "Express"
-  #     MSSQL_SA_PASSWORD: "Dev.password1"
-  #     ACCEPT_EULA: "Y"
-
   node-frontend:
     container_name: node-frontend
     # depends_on:
     #   - mssql-db
     build: 
-      context: .
+      context.
       dockerfile: Dockerfile
     ports:
       - "8080:8080"
-    build: ./
+    build./
     volumes:
       - ./:/workspace:cached
 
-    # command: ["/bin/sh", "-c", "sudo chown -R node:node /workspace && cd workspace && npm i && cd idem-wa-db-migrations && npm i && sleep infinity"]
-
-# networks:
-  # default:
-    # name: idem_common_network
