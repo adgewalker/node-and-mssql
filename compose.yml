@@ -2,7 +2,10 @@ version: '3.9'
 
 services:
   node-frontend:
-    build: .
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    user: root
     ports:
-      - "8080:8080"
+      - 8080:8080
 
