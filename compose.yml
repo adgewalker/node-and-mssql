@@ -10,7 +10,6 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8080:8080"
-    build./
     volumes:
       - ./:/workspace:cached
 
