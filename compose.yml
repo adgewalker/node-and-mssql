@@ -6,7 +6,7 @@ services:
     # depends_on:
     #   - mssql-db
     build: 
-      context.
+      context: .
       dockerfile: Dockerfile
     ports:
       - "8080:8080"
