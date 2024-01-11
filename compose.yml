@@ -17,8 +17,8 @@ services:
 
   node-front-end:
     container_name: node-frontend
-    depends_on:
-      - mssql-db
+    # depends_on:
+    #   - mssql-db
     build: 
       context: .
       dockerfile: Dockerfile
