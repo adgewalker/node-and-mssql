@@ -19,6 +19,9 @@ services:
     container_name: node-frontend
     depends_on:
       - mssql-db
+    build: 
+      context: .
+      dockerfile: Dockerfile
     ports:
       - "8080:8080"
     build: ./
