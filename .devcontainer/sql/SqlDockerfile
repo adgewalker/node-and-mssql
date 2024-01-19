@@ -5,6 +5,4 @@ WORKDIR /opt/config
 
 COPY . /opt/config
 
-RUN chmod +x /opt/config/entrypoint.sh
 
-ENTRYPOINT ["./entrypoint.sh"]
