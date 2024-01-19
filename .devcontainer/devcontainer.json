@@ -1,8 +1,8 @@
 {
   "name": "Auth API",
-  "containerUser": "node",
   "dockerComposeFile": "docker-compose.yml",
   "service": "aw-idem-api",
+  "postCreateCommand": "sudo -u root chown -R node .",
   "customizations": {
     "vscode": {
       "extensions": ["dbaeumer.vscode-eslint"]
