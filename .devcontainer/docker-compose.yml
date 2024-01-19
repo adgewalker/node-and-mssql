@@ -17,6 +17,7 @@ services:
 
   aw-idem-api:
     container_name: aw-idem-api
+    user: node
     depends_on:
       - aw-mssql-db
     tty: true
