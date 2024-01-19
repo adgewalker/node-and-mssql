@@ -1,6 +1,8 @@
 {
   "name": "Auth API",
-  "dockerComposeFile": ["docker-compose.yml"],
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
   "service": "aw-idem-api",
   "customizations": {
     "vscode": {
