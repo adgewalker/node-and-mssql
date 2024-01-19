@@ -1,25 +1,9 @@
 version: '3.8'
 
 services:
-  aw-mssql-db:
-    hostname: sql
-    container_name: aw-mssql-db
-    ports:
-      - "1433:1433"
-    build:
-      context: ./sql
-      dockerfile: SqlDockerfile
-    restart: unless-stopped
-    environment:
-      MSSQL_PID: "Express"
-      MSSQL_SA_PASSWORD: "Dev.password1"
-      ACCEPT_EULA: "Y"
-
   aw-idem-api:
     container_name: aw-idem-api
     user: node
-    depends_on:
-      - aw-mssql-db
     tty: true
     ports:
       - "8080:8080"
