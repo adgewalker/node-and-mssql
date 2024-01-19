@@ -1,11 +1,19 @@
 {
-  "name": "Node & SQL Server",
-  "dockerComposeFile": ["../compose.yml"],
-  "service": "node-frontend",
-  "forwardPorts": [8080],
+  "name": "Auth API",
+  "dockerComposeFile": ["docker-compose.yml"],
+  "service": "idem-api",
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {
+      "version": "latest",
+      "ppa": "false"
+    },   
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "version": "latest"
+    }
+  },
   "customizations": {
     "vscode": {
-      "extensions": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"]
+      "extensions": ["dbaeumer.vscode-eslint"]
     }
   },
   "remoteUser": "node"
