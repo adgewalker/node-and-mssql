@@ -2,15 +2,6 @@
   "name": "Auth API",
   "dockerComposeFile": ["docker-compose.yml"],
   "service": "aw-idem-api",
-  "features": {
-    "ghcr.io/devcontainers/features/git:1": {
-      "version": "latest",
-      "ppa": "false"
-    },   
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {
-      "version": "latest"
-    }
-  },
   "customizations": {
     "vscode": {
       "extensions": ["dbaeumer.vscode-eslint"]
