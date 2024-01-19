@@ -3,13 +3,14 @@ version: '3.8'
 services:
   aw-idem-api:
     container_name: aw-idem-api
-    user: node
+    user: root
     tty: true
     ports:
       - "8080:8080"
     build: 
       context: ../
       dockerfile: ./.devcontainer/Dockerfile
+    command: chown -R node .
 
 networks:
   default:
