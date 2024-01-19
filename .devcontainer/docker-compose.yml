@@ -10,7 +10,7 @@ services:
     build: 
       context: ../
       dockerfile: ./.devcontainer/Dockerfile
-    command: chown -R node .
+    command: sudo -u root chown -R node .
 
 networks:
   default:
