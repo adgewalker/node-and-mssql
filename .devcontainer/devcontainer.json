@@ -1,7 +1,7 @@
 {
   "name": "Auth API",
   "dockerComposeFile": ["docker-compose.yml"],
-  "service": "idem-api",
+  "service": "aw-idem-api",
   "features": {
     "ghcr.io/devcontainers/features/git:1": {
       "version": "latest",
